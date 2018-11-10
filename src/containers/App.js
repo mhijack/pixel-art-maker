@@ -13,8 +13,10 @@ class App extends Component {
         secondaryColor: "#fff"
     };
 
-    handlePickColor = e => {
-        this.setState({ primaryColor: e.target.value });
+    handlePickColor = (color, event) => {
+        const { r, g, b, a } = color.rgb;
+        const rgba = `rgba(${r}, ${g}, ${b}, ${a})`;
+        this.setState({ primaryColor: rgba });
     };
 
     /*
@@ -32,7 +34,10 @@ class App extends Component {
             <div className="App">
                 <h1>Pixel Art Maker</h1>
 
-                <ControlPanel handlePickColor={this.handlePickColor} />
+                <ControlPanel
+                    primaryColor={this.state.primaryColor}
+                    handlePickColor={this.handlePickColor}
+                />
 
                 <Suspense fallback={<div>Loading</div>}>
                     <Canvas {...this.state} />

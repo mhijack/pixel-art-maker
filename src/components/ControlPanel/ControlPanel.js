@@ -1,15 +1,17 @@
 import React from "react";
+import { SketchPicker } from "react-color";
 
-const ControlPanel = ({ handlePickColor }) => {
+const ControlPanel = ({ primaryColor, handlePickColor }) => {
     return (
         <div className="control">
-            <h1>Pixel Art Maker</h1>
+            <div>Change Row</div>
 
-            <div>Row</div>
+            <div>Change Column</div>
 
-            <div>Column</div>
-
-            <input type="color" onChange={handlePickColor} />
+            <SketchPicker
+                color={primaryColor}
+                onChangeComplete={handlePickColor}
+            />
         </div>
     );
 };

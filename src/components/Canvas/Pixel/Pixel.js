@@ -9,7 +9,7 @@ const Pixel = ({ id, backgroundColor, onMouseEnter }) => {
             backgroundColor === null
                 ? id % 2 === 0
                     ? "white"
-                    : "#b2b8bd"
+                    : "#DBDCE0"
                 : backgroundColor
     };
 
