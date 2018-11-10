@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/jack1/Developer/apps/pixel-art-maker/src/components/Canvas/Pixel/Pixel.css"],"names":[],"mappings":"AAAA,OACI,YAAa,AACb,WAAY,AACZ,WAAa,CAEhB","file":"1.101a1746.chunk.css","sourcesContent":[".pixel {\n    height: 15px;\n    width: 15px;\n    border: none;\n    /* border-radius: 1px; */\n}\n"]}
