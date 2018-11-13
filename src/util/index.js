@@ -5,8 +5,8 @@ export default (function() {
         @returns {Object[][]} A matrix of pixel config objects.
     */
     function generatePixelConfigs(
-        height = 50,
-        width = 50,
+        height = 150,
+        width = 150,
         drawnColor = undefined
     ) {
         const configs = [];

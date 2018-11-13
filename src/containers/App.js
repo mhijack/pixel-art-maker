@@ -4,7 +4,8 @@ import util from "../util/index";
 import "./App.css";
 
 import ControlPanel from "../components/ControlPanel/ControlPanel";
-const Canvas = lazy(() => import("../components/Canvas/Canvas"));
+import Canvas from "../components/Canvas/Canvas";
+// const Canvas = lazy(() => import("../components/Canvas/Canvas"));
 
 class App extends Component {
     state = {
@@ -13,6 +14,9 @@ class App extends Component {
         secondaryColor: "#fff"
     };
 
+    /*
+        Saves 
+    */
     handlePickColor = (color, event) => {
         const { r, g, b, a } = color.rgb;
         const rgba = `rgba(${r}, ${g}, ${b}, ${a})`;
